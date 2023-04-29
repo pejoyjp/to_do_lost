@@ -131,7 +131,7 @@ const Main: FC<MainProps> = ({ theme, autoTheme, changeTheme }) => {
 	return (
 		<div className='main-container'>
 			<div className='header'>
-				<h1>Todo List</h1>
+				<h1>任务清单</h1>
 				<div className='right'>
 					<Tooltip placement='bottomRight' title={isTop ? '取消置顶' : '窗口置顶'}>
 						<Button type='text' onClick={() => toggleTop()}>
@@ -337,7 +337,7 @@ const Main: FC<MainProps> = ({ theme, autoTheme, changeTheme }) => {
 				) : (
 					<Empty
 						style={{ padding: '50px 0' }}
-						description={'全部都完成啦!!'}
+						description={'当前没有新的任务哦！'}
 						image={EMPTY_IMAGE[realTheme]}
 					/>
 				)}

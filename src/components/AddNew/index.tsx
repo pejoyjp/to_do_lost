@@ -57,7 +57,7 @@ const AddNew: FC<AddNewProps> = (props) => {
 								<input
 									// ref={titleInput}
 									type='text'
-									placeholder='例如: 周日看书 1 小时'
+									placeholder='例如: 学习python1小时'
 									value={todoData.content}
 									onKeyUp={(e) => handleKeyUp(e)}
 									onChange={(e: any) => {
